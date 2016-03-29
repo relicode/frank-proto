@@ -14,17 +14,21 @@ $(document).ready ->
 
   getLocation((pos)=>
     # Set map location to position
-    console.log pos
     lat = pos.coords.latitude
     lng = pos.coords.longitude
 
-    OfferMap.setView([lat, lng], 16)
+    OfferMap.setView([lat, lng], 18)
 
     getVenues(pos).then(
       (venues)->
+
+        `
+        venues.forEach(function(venue) {
+          L.marker([venue.location.lat, venue.location.lng]).addTo(OfferMap);
+        });
+        `
         console.log venues
     )
-
 
   )
 
