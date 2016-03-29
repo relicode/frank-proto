@@ -24,8 +24,8 @@ body {
     .loader {
       display: block;
       position: absolute;
-      top: 13rem;
-      left: 50%;
+      top: 12rem;
+      left: 46%;
     }
 
     .frontpage-info__points-of-interest {
@@ -61,10 +61,12 @@ body {
   }
 
   &__location {
+    margin-top: 8rem;
     left: 30%;
     display: block;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 48px;
+    font-size: 110px;
+    transition: opacity 
   }
 
   &__points-of-interest {
