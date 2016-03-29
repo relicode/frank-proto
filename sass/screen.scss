@@ -7,6 +7,20 @@
 
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
+
+  .loader {
+    display: none;
+  }
+
+  &.loading {
+
+    .loader {
+      display: block;
+      position: absolute;
+      top: 4rem;
+      left: 50%;
+    }
+  }
 }
 
 .primary-header {

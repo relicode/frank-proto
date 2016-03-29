@@ -7,6 +7,7 @@ $(document).ready ->
   getLocation((pos)=>
     getVenues(pos).then(
       (venues)->
+        $('body').removeClass('loading')
         console.log venues
     )
   )
