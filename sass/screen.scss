@@ -5,16 +5,42 @@
 
 @import "compass/reset";
 
+$frank-yellow: rgba(254,237,1,1);
+$frank-black: rgba(17,17,17,1);
+
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
+
+  .loader {
+    display: none;
+  }
+
+  &.loading {
+
+    .loader {
+      display: block;
+      position: absolute;
+      top: 4rem;
+      left: 50%;
+    }
+  }
 }
 
-.primary-header {
-  font-family: 'Roboto Condensed', sans-serif;
+.frontpage-info {
+  border: solid black 1px;
+  &__header {
+
+  }
+  &__location {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 48px;
+  }
+  &__points-of-interest {
+  }
 }
 
 .frontpage-upper {
-  background-color: yellow;
+  background-color: $frank-yellow;
 }
 
 .frontpage-middle {
