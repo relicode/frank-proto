@@ -42,3 +42,15 @@ getVenues = (pos)->
     .catch((error)->
         console.log 'error', error
   )
+
+
+OfferMap = L.map('OfferMap').setView([51.505, -0.09], 13)
+
+`
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: '',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1IjoidmlsbGV0b3UiLCJhIjoiY2ltZGRlaDVrMDAxNnZ6a2tkdWZ4eWxrMyJ9.cc5hlxxy92hT8NwyXMIJdA'
+}).addTo(OfferMap);
+`
