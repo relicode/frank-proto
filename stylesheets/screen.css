@@ -73,11 +73,16 @@ body {
 }
 
 /* line 12, ../sass/screen.scss */
-.primary-header {
+.frontpage-info {
+  border: solid black 1px;
+}
+/* line 17, ../sass/screen.scss */
+.frontpage-info__location {
   font-family: 'Roboto Condensed', sans-serif;
+  font-size: 48px;
 }
 
-/* line 16, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 .frontpage-upper {
   background-color: yellow;
 }

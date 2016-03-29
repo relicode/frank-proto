@@ -9,8 +9,17 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.primary-header {
-  font-family: 'Roboto Condensed', sans-serif;
+.frontpage-info {
+  border: solid black 1px;
+  &__header {
+
+  }
+  &__location {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 48px;
+  }
+  &__points-of-interest {
+  }
 }
 
 .frontpage-upper {
