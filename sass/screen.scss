@@ -17,24 +17,52 @@ body {
 
   &.loading {
 
+    .frontpage-info__location, .frontpage-info__points-of-interest {
+      display: none;
+    }
+
     .loader {
       display: block;
       position: absolute;
-      top: 4rem;
+      top: 13rem;
       left: 50%;
     }
   }
 }
 
 .frontpage-info {
-  border: solid black 1px;
+
+  width: 100%;
+  background-image: url("../img/hero.png");
+  height: 30rem;
+
+
   &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding: 0 1rem;
+
+    .logo {
+      float: left;
+      width: 64px;
+    }
+
+    .menu {
+      float: right;
+    }
 
   }
+
   &__location {
+    left: 30%;
+    display: block;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 48px;
   }
+
   &__points-of-interest {
   }
 }
