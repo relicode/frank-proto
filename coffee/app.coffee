@@ -21,13 +21,15 @@ $(document).ready ->
 
     getVenues(pos).then(
       (venues)->
+
         `
         venues.forEach(function(venue) {
           L.marker([venue.location.lat, venue.location.lng]).addTo(OfferMap);
         });
         `
-
         $('body').removeClass('loading')
+        $('#LocationCount').text(venues.length)
+
         console.log venues
     )
 
