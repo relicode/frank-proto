@@ -1,0 +1,15 @@
+{
+  "name": "sunglasses-poc",
+  "version": "0.0.1",
+  "description": "A proof of concept for online testing sunglasses using the devices camera",
+  "main": "index.js",
+  "scripts": {
+      "start": "http-server"
+  },
+  "author": "Anssi Herranen",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}
