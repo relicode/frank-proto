@@ -24,7 +24,9 @@ $(document).ready ->
 
         `
         venues.forEach(function(venue) {
-          L.marker([venue.location.lat, venue.location.lng]).addTo(OfferMap);
+          L.marker([venue.location.lat, venue.location.lng])
+            .bindPopup('<p class="map-popup__title">' + venue.name + '</p>' + '<p>Pizza ja olut 8 euroa!</p><a href="#">Siirry tarjoukseen!</a>')
+            .addTo(OfferMap);
         });
         `
         $('body').removeClass('loading')
