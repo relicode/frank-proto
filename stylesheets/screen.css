@@ -69,5 +69,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 8, ../sass/screen.scss */
 body {
-  font-family: Helvetica, Arial, Sans-Serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* line 12, ../sass/screen.scss */
+.primary-header {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* line 16, ../sass/screen.scss */
+.frontpage-upper {
+  background-color: yellow;
 }
