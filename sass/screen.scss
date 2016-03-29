@@ -5,6 +5,9 @@
 
 @import "compass/reset";
 
+$frank-yellow: rgba(254,237,1,1);
+$frank-black: rgba(17,17,17,1);
+
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
 
@@ -28,7 +31,7 @@ body {
 }
 
 .frontpage-upper {
-  background-color: yellow;
+  background-color: $frank-yellow;
 }
 
 .frontpage-middle {
